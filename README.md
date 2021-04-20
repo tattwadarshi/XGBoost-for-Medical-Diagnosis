@@ -33,3 +33,19 @@ In this project we perform the following:
 
 
 - **[Building, Drawing, Interpreting and Evaluating the Optimized XGBoost Model](#draw-tree)**
+
+
+# Import the modules that will do all the work
+The very first thing we do is load in a bunch of python modules. Python, itself, just gives us a basic programming language. These modules give us extra functionality to import the data, clean it up and format it, and then build, evaluate and draw the **XGBoost** model. 
+
+**NOTE:** You will need **Python 3** and have at least these versions for each of the following modules: 
+- pandas >= 1.2.3
+- numpy >= 1.19.2
+- sklearn >= 0.24.1
+- xgboost >= 1.3.3
+ 
+If you installed **Python 3** with [Anaconda](https://www.anaconda.com/), you can check which versions you have with the command: `conda list`. If, for example, your version of `scikit-learn` is older than 0.22.1, then the easiest thing to do is just update all of your **Anaconda** packages with the following command: `conda update --all`. However, if you only want to update `scikit-learn`, then you can run this command: `conda install scikit-learn=0.22.1`.
+
+If you need to install `xgboost`, then you can do so with the following command: `conda install -c conda-forge xgboost`.
+
+**NOTE:** To draw the tree, you will also need to install `graphviz`. You can do that with the command: `conda install graphviz python-graphviz`.
